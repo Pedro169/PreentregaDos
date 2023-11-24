@@ -3,22 +3,18 @@ class Descripcion {
     this.seguros = { seguros };
   }
 
+  // recorre el nuevo arreglo y renombra las propiedades seleccionadas
+
   ObtenerDescripcionProducto() {
     let descripcion = seguros.map((seguro) => {
       return {
         nombreSeguro: seguro.nombre,
+        descripcionSeguro: seguro.descripcion,
         valorNeto: seguro.valor,
         Iva: parseInt(seguro.valor) * 0.19,
-        descripcionSeguro: seguro.descripcion,
+        valorTotal: parseInt(seguro.valor) + parseInt(seguro.valor) * 0.19,
       };
     });
     console.table(descripcion);
   }
-  // obtenerDescripcion() {
-  //   if (this.seguros.length > 0) {
-  //     return this.seguros.filter((segurosDescripcion) =>
-  //       console.log(segurosDescripcion.descripcion)
-  //     );
-  //   }
-  // }
 }
