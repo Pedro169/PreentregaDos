@@ -42,7 +42,7 @@ const adquiereSeguro = () => {
         seguroFiltrado.valor
     );
     const describe = new Descripcion(seguros);
-    let descripcion = describe.obtenerDescripcion();
+    let descripcion = describe.ObtenerDescripcionProducto();
     console.log(descripcion);
   }
 };
