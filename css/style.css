@@ -6,7 +6,7 @@
 }
 
 body {
-  background-color: blue;
+  background-color: black;
   color: white;
 }
 body header nav {
@@ -25,6 +25,7 @@ body main h1 {
   font-size: 3rem;
   text-align: center;
   padding: 1rem;
+  color: yellow;
 }
 body main p {
   padding: 1.5rem;
@@ -39,21 +40,121 @@ body main section {
   align-items: center;
   padding: 2rem;
 }
-body main section div ul {
+body main section form {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  color: yellow;
+}
+body main section form label {
+  position: relative;
+  font-size: 2rem;
+  bottom: 2rem;
+}
+body main section form select {
+  color: black;
+  padding: 0.5rem 2rem;
+  border-radius: 1rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+body main section form select option {
+  color: black;
+  background-color: white;
+  cursor: pointer;
+}
+body main section form .input {
+  position: relative;
+  color: black;
+  padding: 0.5rem 2rem;
+  border-radius: 1rem;
+  cursor: pointer;
+  top: 1rem;
+  font-size: 1.5rem;
+}
+body main section form ul {
   display: flex;
   flex-direction: column;
   padding: 1rem;
 }
-body main section div ul li {
+body main section form ul li {
   font-size: 1.5rem;
 }
 body main section div img {
   border-radius: 1rem;
 }
+body main section .boton {
+  border-radius: 1rem;
+  background-color: yellow;
+  padding: 1rem 2rem;
+  cursor: pointer;
+}
+body main section .boton:hover {
+  background-color: gray;
+  color: white;
+}
 body footer {
   background-color: white;
   width: 100%;
   height: 2rem;
+}
+
+body main .descripcionSeguro {
+  display: flex;
+  flex-direction: column;
+}
+body main .descripcionSeguro .parrafoInicial {
+  display: flex;
+  color: gray;
+  font-size: 2rem;
+}
+body .infoLs {
+  background-color: gray;
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  padding: 5rem;
+  flex-direction: column;
+  color: yellow;
+  text-align: justify;
+}
+body .infoLs span {
+  color: white;
+}
+body section button {
+  background-color: yellow;
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+body section .oculto {
+  display: none;
+}
+body section #mensaje {
+  background-color: #34dbb1;
+  color: #fff;
+  border-radius: 8px;
+  padding: 1rem;
+  text-align: center;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 999;
+  border-radius: 1rem;
+}
+body section #mensaje span {
+  color: yellow;
+}
+body section #cerrarMensaje {
+  background-color: yellow;
+  color: black;
+  padding: 10px 15px;
+  margin-top: 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=style.css.map */

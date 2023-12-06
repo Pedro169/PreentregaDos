@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script defer src="./js/main.js"></script>
+    <script defer src="./js/class.seguro.js"></script>
+    <script defer src="./js/arregloSeguro.js"></script>
+    <script defer src="./js/cotizacionSeguro.js"></script>
+    <title>Prentrega 3</title>
+  </head>
+  <body>
+    <head>
+      <nav></nav>
+    </head>
+    <main>
+      <section class="descripcionSeguro">
+        <h1>Gracias por cotizar con CoderSeguros..</h1>
+        <p class="parrafoInicial">
+          La descripción del seguro a contratar es la siguiente:
+        </p>
+      </section>
+      <section class="infoLs">
+        <p>
+          Seguro Solicitado: <span class="nombreSeguro">Aqui va el seguro</span>
+        </p>
+        <p>
+          Valor neto Seguro:
+          <span class="valorSeguro">Aqui va el valor neto</span>
+        </p>
+        <p>
+          Cobertura Seguro:
+          <span class="descripcionSeguro">Aqui va la descripcion</span>
+        </p>
+        <p>
+          Tu seguro tiene un valor total con Iva de:
+          <span class="valorTotalSeguro">retorno valor total</span>
+        </p>
+      </section>
+      <section>
+        <button id="mostrarMensaje">Contratar</button>
+        <div id="mensaje" class="oculto">
+          <p>
+            Gracias por contratar el
+            <span class="nombre">nombre seguro </span> uno de nuestros asesores
+            te contactara al siguiente número telefónico
+            <span class="telefono">celular</span>
+          </p>
+          <button id="cerrarMensaje">Cerrar</button>
+        </div>
+      </section>
+    </main>
+    <footer></footer>
+  </body>
+</html>

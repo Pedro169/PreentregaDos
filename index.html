@@ -1,10 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/style.css" />
-    <title>Prentrega 1</title>
+    <script defer src="./js/main.js"></script>
+    <script defer src="./js/class.seguro.js"></script>
+    <script defer src="./js/arregloSeguro.js"></script>
+    <title>Prentrega 3</title>
   </head>
   <body>
     <header>
@@ -15,33 +18,31 @@
     <main>
       <h1>Bienvenido a CoderSeguros</h1>
       <p>
-        En esta página podrás cotizar un seguro, asegurate de ingresar el código
-        correcto para la entrega de información:
+        En esta página podrás cotizar un seguro para ti o tu familia, asegurate
+        seleccionar el seguro correcto en la opcion cotizar seguro:
       </p>
       <section>
-        <div>
-          <ul>
-            <li>334 - Seguro Contra Incendio</li>
-            <li>335 - Seguro Contra accidentes domésticos</li>
-            <li>336 - Seguro Contra accidentes de tránsito</li>
-            <li>337 - Seguro Contra Robos</li>
-            <li>338 - Seguro por fallecimiento</li>
-            <li>339 - Seguro para vehiculos</li>
-          </ul>
-        </div>
+        <form class="formSeguro">
+          <label for="nombreSeguro">Selecciona el seguro a cotizar</label>
+          <select name="seleccionSeguro" id="SelectSeguro">
+            <option disabled selected>Busca la Opcion de tu seguro...</option>
+          </select>
+
+          <input
+            class="input"
+            type="text"
+            id="telefono"
+            placeholder="ingresa tu numero de telefono"
+          />
+        </form>
         <div>
           <img src="img/poliza.webp" alt="" />
         </div>
       </section>
-
-      <p>
-        Ejecuta el codigo en la consola <strong>DevTools</strong> escribiendo
-        adquiereSeguro() e ingresando el código del seguro.
-      </p>
+      <section>
+        <button class="boton">Cotizar</button>
+      </section>
     </main>
     <footer></footer>
-
-    <script src="./js/main.js"></script>
-    <script src="./js/class.seguro.js"></script>
   </body>
 </html>

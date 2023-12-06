@@ -6,7 +6,7 @@
 }
 
 body {
-  background-color: blue;
+  background-color: black;
   color: white;
   header {
     nav {
@@ -29,6 +29,7 @@ body {
       font-size: 3rem;
       text-align: center;
       padding: 1rem;
+      color: yellow;
     }
     p {
       padding: 1.5rem;
@@ -42,7 +43,38 @@ body {
       justify-content: center;
       align-items: center;
       padding: 2rem;
-      div {
+      form {
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        color: yellow;
+
+        label {
+          position: relative;
+          font-size: 2rem;
+          bottom: 2rem;
+        }
+        select {
+          color: black;
+          padding: 0.5rem 2rem;
+          border-radius: 1rem;
+          font-size: 1.5rem;
+          cursor: pointer;
+          option {
+            color: black;
+            background-color: white;
+            cursor: pointer;
+          }
+        }
+        .input {
+          position: relative;
+          color: black;
+          padding: 0.5rem 2rem;
+          border-radius: 1rem;
+          cursor: pointer;
+          top: 1rem;
+          font-size: 1.5rem;
+        }
         ul {
           display: flex;
           flex-direction: column;
@@ -56,6 +88,18 @@ body {
       div {
         img {
           border-radius: 1rem;
+        }
+      }
+    }
+    section {
+      .boton {
+        border-radius: 1rem;
+        background-color: yellow;
+        padding: 1rem 2rem;
+        cursor: pointer;
+        &:hover {
+          background-color: gray;
+          color: white;
         }
       }
     }

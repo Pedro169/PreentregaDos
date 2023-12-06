@@ -1,20 +1,13 @@
-class Descripcion {
-  constructor(seguros) {
-    this.seguros = { seguros };
+class calculoIva {
+  constructor(valor, iva) {
+    this.valor = valor || 0;
+    this.iva = iva || 0;
   }
 
   // recorre el nuevo arreglo y renombra las propiedades seleccionadas
 
-  ObtenerDescripcionProducto() {
-    let descripcion = seguros.map((seguro) => {
-      return {
-        nombreSeguro: seguro.nombre,
-        descripcionSeguro: seguro.descripcion,
-        valorNeto: seguro.valor,
-        Iva: parseInt(seguro.valor) * 0.19,
-        valorTotal: parseInt(seguro.valor) + parseInt(seguro.valor) * 0.19,
-      };
-    });
-    console.table(descripcion);
+  obtenerCalculo() {
+    let calculoTotalIva = this.valor * this.iva + this.valor;
+    return calculoTotalIva;
   }
 }

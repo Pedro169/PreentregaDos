@@ -1,0 +1,63 @@
+body {
+  main {
+    .descripcionSeguro {
+      display: flex;
+      flex-direction: column;
+      .parrafoInicial {
+        display: flex;
+        color: gray;
+        font-size: 2rem;
+      }
+    }
+  }
+  .infoLs {
+    background-color: gray;
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    padding: 5rem;
+    flex-direction: column;
+    color: yellow;
+    text-align: justify;
+    span {
+      color: white;
+    }
+  }
+  section {
+    button {
+      background-color: yellow;
+      padding: 1rem 2rem;
+      border-radius: 1rem;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+    .oculto {
+      display: none;
+    }
+    #mensaje {
+      background-color: #34dbb1;
+      color: #fff;
+      border-radius: 8px;
+      padding: 1rem;
+      text-align: center;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 999;
+      border-radius: 1rem;
+      span {
+        color: yellow;
+      }
+    }
+    #cerrarMensaje {
+      background-color: yellow;
+      color: black;
+      padding: 10px 15px;
+      margin-top: 15px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  }
+}
