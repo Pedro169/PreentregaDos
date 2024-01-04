@@ -42,13 +42,16 @@ const segurosDescripcion = [
 ];
 //select DOM
 
-const selectSeguros = document.querySelector("select#SelectSeguro");
+
 
 const cargarSeguro = () => {
+  const selectSeguros = document.querySelector("#SelectSeguro");
   if (segurosDescripcion.length > 0) {
     segurosDescripcion.forEach((seguro) => {
       selectSeguros.innerHTML += `<option>${seguro.nombre}</option>`;
     });
-  }
+  }else{
+    
+  }  
 };
 cargarSeguro();

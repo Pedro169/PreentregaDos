@@ -7,6 +7,9 @@
     <script defer src="./js/main.js"></script>
     <script defer src="./js/class.seguro.js"></script>
     <script defer src="./js/arregloSeguro.js"></script>
+    <script defer src="./js/validaciones.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.10.2/dist/sweetalert2.min.css" rel="stylesheet">
+    <script defer src="https://cdn.jsdelivr.net/npm/sweetalert2@11.10.2/dist/sweetalert2.all.min.js"></script>
     <title>Prentrega 3</title>
   </head>
   <body>
@@ -29,10 +32,13 @@
           </select>
 
           <input
+            required
             class="input"
             type="text"
             id="telefono"
+            name="telefono"
             placeholder="ingresa tu numero de telefono"
+            
           />
         </form>
         <div>
@@ -40,7 +46,7 @@
         </div>
       </section>
       <section>
-        <button class="boton">Cotizar</button>
+        <button type="button" class="boton" onclick="validarCampo()">Cotizar</button>
       </section>
     </main>
     <footer></footer>
